@@ -36,6 +36,7 @@ body {
   overflow: hidden;
   perspective: 1000px;
   padding: 50px 0px;
+  overflow: hidden;
 }
 
 .button {
@@ -60,8 +61,10 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   display: flex;
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center; /* Було center */
+    padding: 20px; /* Додає відступ зверху */
+    overflow-y: auto; 
   
   /* Початковий стан - невидимий */
   opacity: 0;
@@ -128,6 +131,7 @@ body {
 
 
 .night {
+  overflow: hidden;
   position: fixed;
   left: 50%;
   top: 0;
@@ -138,7 +142,7 @@ body {
 }
 
 .flowers {
-  position: relative;
+  position: fixed;
   transform: scale(0.9);
 }
 
