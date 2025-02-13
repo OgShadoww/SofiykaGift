@@ -49,11 +49,12 @@ body {
   border-radius: 10px;
   background-color: #eb6bff;
   padding: 5px 8px;
-  bottom: 20%;
+  bottom: 15%;
 }
 
 /* Початково приховане модальне вікно */
 .modal {
+  z-index: 100000;
   position: fixed;
   z-index: 100;
   left: 0;
